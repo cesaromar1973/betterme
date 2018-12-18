@@ -1,0 +1,76 @@
+<html>
+<head>
+<style>
+* {
+	box-sizing: border-box;
+}
+/* STRUCTURE */
+
+.wrapperBetterMe {
+	padding: 5px;
+	max-width: 960px;
+	width: 95%;
+	margin: 20px auto;
+}
+.columnBetterMesBetterMe {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+.columnBetterMe {
+	flex: 1;
+	border: none;
+	margin: 2px;
+	padding: 10px;
+ &:first-child {
+margin-left: 0;
+}
+ &:last-child {
+margin-right: 0;
+}
+}
+
+@media screen and (max-width: 980px) {
+.columnBetterMesBetterMe .columnBetterMe {
+	margin-bottom: 5px;
+	flex-basis: 40%;
+ &:nth-last-child(2) {
+ margin-right: 0;
+}
+ &:last-child {
+ flex-basis: 100%;
+ margin: 0;
+}
+}
+}
+
+@media screen and (max-width: 680px) {
+.columnBetterMesBetterMe .columnBetterMe {
+	flex-basis: 100%;
+	margin: 0 0 5px 0;
+}
+}
+</style>
+</head>
+
+<div class="wrapperBetterMe">
+  <section class="columnBetterMesBetterMe">
+    <div class="columnBetterMe">
+      <p align="center"><img alt="" src="https://cdn.shopify.com/s/files/1/1923/5309/files/n_bones1.png" style="height: 150px; width: 200px;"></p>
+      <p align="center"><strong>Calcium & Vitamin D3</strong></p>
+      <p style="text-align: center;">Calcium is widely known to be vital for healthy bones, but without vitamin D3 it may not be properly absorbed or utilized in the body.*</p>
+    </div>
+    <div class="columnBetterMe">
+      <p align="center"><img alt="" src="https://cdn.shopify.com/s/files/1/1923/5309/files/n_bones2.png" style="height: 150px; width: 200px;"></p>
+      <p align="center"><strong>Trace Minerals</strong></p>
+      <p  style="text-align: center;">Trace minerals copper, manganese and zinc all play crucial roles in cellular reactions that help build and protect strong bones.*</p>
+    </div>
+    <div class="columnBetterMe">
+      <p align="center"><img alt="" src="https://cdn.shopify.com/s/files/1/1923/5309/files/n_bones3.png" style="height: 150px; width: 200px;"></p>
+      <p align="center"><strong>Complementary Nutrients</strong></p>
+      <p  style="text-align: center;">Our unique bone health formula contains eight nutrients that complement one another in the process of building healthy bones.*</p>
+    </div>
+  </section>
+</div>
+</html>

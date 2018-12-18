@@ -1,0 +1,76 @@
+<html>
+<head>
+<style>
+* {
+	box-sizing: border-box;
+}
+/* STRUCTURE */
+
+.wrapperBetterMe {
+	padding: 5px;
+	max-width: 960px;
+	width: 95%;
+	margin: 20px auto;
+}
+.columnBetterMesBetterMe {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+.columnBetterMe {
+	flex: 1;
+	border: none;
+	margin: 2px;
+	padding: 10px;
+ &:first-child {
+margin-left: 0;
+}
+ &:last-child {
+margin-right: 0;
+}
+}
+
+@media screen and (max-width: 980px) {
+.columnBetterMesBetterMe .columnBetterMe {
+	margin-bottom: 5px;
+	flex-basis: 40%;
+ &:nth-last-child(2) {
+ margin-right: 0;
+}
+ &:last-child {
+ flex-basis: 100%;
+ margin: 0;
+}
+}
+}
+
+@media screen and (max-width: 680px) {
+.columnBetterMesBetterMe .columnBetterMe {
+	flex-basis: 100%;
+	margin: 0 0 5px 0;
+}
+}
+</style>
+</head>
+
+<div class="wrapperBetterMe">
+  <section class="columnBetterMesBetterMe">
+    <div class="columnBetterMe">
+      <p align="center"><img alt="" src="https://cdn.shopify.com/s/files/1/1923/5309/files/n_vision1.png" style="height: 150px; width: 200px;"></p>
+      <p align="center"><strong>Six Antioxidants</strong></p>
+      <p style="text-align: center;">Better Vision contains six powerful antioxidants to help protect our eyes from free radicals.*</p>
+    </div>
+    <div class="columnBetterMe">
+      <p align="center"><img alt="" src="https://cdn.shopify.com/s/files/1/1923/5309/files/n_vision2.png" style="height: 150px; width: 200px;"></p>
+      <p align="center"><strong>Lutein & Zeaxanthin</strong></p>
+      <p  style="text-align: center;">Lutein & zeaxanthin are carotenoids that function as antioxidants. They can also act as filters to protect our eyes from sunlight damage.*</p>
+    </div>
+    <div class="columnBetterMe">
+      <p align="center"><img alt="" src="https://cdn.shopify.com/s/files/1/1923/5309/files/n_vision3.png" style="height: 150px; width: 200px;"></p>
+      <p align="center"><strong>One Easy Capsule</strong></p>
+      <p  style="text-align: center;">Better Vision provides ample doses of all the antioxidant nutrients vital for eye health in one softgel capsule to be taken once daily.*</p>
+    </div>
+  </section>
+</div>
+</html>
